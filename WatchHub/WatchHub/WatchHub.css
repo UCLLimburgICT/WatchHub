@@ -1,0 +1,139 @@
+﻿/*overal*/
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header, footer, nav {
+    display: block;
+}
+
+body {
+    background-color: #DDDDFF;
+    font-family: Verdana, sans-serif;
+    font-size: 100%; /*Dit is nodig opdat em overal goed werkt*/
+}
+
+.navbar {
+    margin-bottom: 0 !important;
+}
+
+
+@media (min-width: 768px) {
+    .nav.navbar-nav {
+        right: 10px;
+        position: absolute;
+    }
+}
+
+@media (min-width: 992px) {
+    .nav.navbar-nav {
+        right: 400px;
+        position: absolute;
+    }
+}
+
+/*Startpagina*/
+.jumbotron {
+    background: url("")no-repeat center center;
+    background-size: cover;
+    height: 650px;
+    padding-bottom: 0;
+    margin-bottom: 0 !important;
+}
+
+.jumbotron  .container  p:first-child{
+    font-size:1em;
+    margin-bottom:3px;
+    margin-left:2px;
+    padding:0;
+}
+
+.jumbotron .container p {
+    font-size: 3em;
+    margin: 0;
+    padding: 0;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    line-height: 1em;
+}
+
+#jumbbutonPre {
+    text-decoration: none;
+    background-color: #1e1e1e;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 3px;
+    display: inline-block;
+    padding: 9px 38px;
+    border: 2px solid #1e1e1e;
+    border-radius: 25px;
+    text-align: center;
+    text-transform: uppercase;
+    vertical-align: middle;
+    white-space: nowrap;
+    line-height: 1.5em;
+    position: absolute;
+    margin-top: 25px;
+    -webkit-transition: background-color 1s; /* For Safari 3.1 to 6.0 */
+    transition: background-color 0.5s;
+}
+
+#jumbbutonPre:hover {
+    background-color: rgba(30, 30, 30, 0.1)
+}
+
+#jumbbutonCla {
+    text-decoration: none;
+    background-color: #1e1e1e;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 3px;
+    display: inline-block;
+    padding: 9px 38px;
+    border: 2px solid #1e1e1e;
+    border-radius: 25px;
+    text-align: center;
+    text-transform: uppercase;
+    vertical-align: middle;
+    white-space: nowrap;
+    line-height: 1.5em;
+    position: absolute;
+    margin-top: 25px;
+    margin-left: 200px;
+    -webkit-transition: background-color 1s; /* For Safari 3.1 to 6.0 */
+    transition: background-color 0.5s;
+}
+
+#jumbbutonCla:hover {
+    background-color: rgba(30, 30, 30, 0.1)
+}
+
+#bounce {
+    text-align: center;
+    margin-top: 450px;
+    -moz-animation: bounce 2s infinite;
+    -webkit-animation: bounce 2s infinite;
+    animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+    }
+
+    40% {
+        transform: translateY(-30px);
+    }
+
+    60% {
+        transform: translateY(-15px);
+    }
+}
+
